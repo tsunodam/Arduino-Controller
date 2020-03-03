@@ -9,9 +9,6 @@ time.sleep(2)
 while 1:
     incoming = str (ArduinoSerial.readline()) ##read the serial data and print it as line
 
-    if 'S' in incoming:
-        print('WELCOME TO SUBWAY SURFER!!')
- 		
     if 'L' in incoming:
         pyautogui.press('left')	
         print('LEFT STEP')
